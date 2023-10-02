@@ -18,10 +18,10 @@ app.post('/tareas', (req,res)=>{
     res.status(201).json({ message: "Tarea agregada con exito"})
 })
 
-app.put("/tareas/:indice" (req.res) => {
+app.put("/tareas/:indice", (req, res) => {
 const indice = parseInt(req.params.indice);
 
-cont {tarea}= req.body;
+const {tarea} = req.body;
 
 const data = fs.readFileSync("tareas.txt", "utf8").trim().split("\n");
 
